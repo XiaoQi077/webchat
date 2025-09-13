@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+
+{% block title %}聊天 - Web聊天室{% endblock %}
+
+{% block content %}
+<div class="chat-container">
+    <div class="user-list-sidebar">
+        <div class="sidebar-header">
+            <h3>在线用户 ({{ online_user_ids|length }})</h3>
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="搜索用户或群组...">
+        </div>
+
+        <div class="user-list">
+            <div class="user-category">聊天</div>
+            <div class="user-item active" data-chat-type="public" onclick="selectPublicChatHandler()">
+                <span class="status-indicator online"></span>
+                <img src="{{ url_for('static', filename='images/public_chat.png') }}" class="user-avatar" alt="公共聊天室">
+                <div class="user-info">
+                    <div class="user-name">公共聊天室</div>
+                </div>
+            </div>
+
+            <div class="user-category">用户</div>
+            {% for user in users %}
+                {% if user.id != current_user.id %}
+                    <div class="user-item {% if user.id in online_user_ids %}online{% else %}offline{% endif %}"
+                         data-user-id="{{ user.id }}"
+                         onclick="selectUserHandler({{ user.id }}, '{{ user.nickname or user.username }}')">
+                        <span class="status-indicator {% if user.id in online_user_ids %}online{% else %}offline{% endif %}"></span>
+                        <img src="{{ user.avatar or url_for('static', filename='images/default_avatar.png') }}" class="user-avatar" alt="{{ user.nickname or user.username }}">
+                        <div class="user-info">
+                            <div class="user-name">{{ user.nickname or user.username }}</div>
+                            <div class="user-status">{% if user.id in online_user_ids %}在线{% else %}离线{% endif %}</div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+
+            <div class="user-category">我的群组</div>
+            {% for group in user_groups %}
+                <div class="user-item" data-group-id="{{ group.id }}" onclick="selectGroupHandler({{ group.id }}, '{{ group.name }}')">
+                    <span class="status-indicator online"></span>
+                    <img src="{{ url_for('static', filename='images/group_chat.png') }}" class="user-avatar" alt="{{ group.name }}">
+                    <div class="user-info">
+                        <div class="user-name">{{ group.name }}</div>
+                        <div class="user-status">群组</div>
+                    </div>
+                </div>
+            {% endfor %}
+
+            <div class="user-category">所有群组</div>
+            {% for group in groups %}
+                <div class="user-item" data-group-id="{{ group.id }}" onclick="selectGroupHandler({{ group.id }}, '{{ group.name }}')">
+                    <span class="status-indicator online"></span>
+                    <img src="{{ url_for('static', filename='images/group_chat.png') }}" class="user-avatar" alt="{{ group.name }}">
+                    <div class="user-info">
+                        <div class="user-name">{{ group.name }}</div>
+                        <div class="user-status">创建者: {{ group.creator_name }}</div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        {% if current_user.can_create_group %}
+        <div class="create-group-section">
+            <button onclick="document.getElementById('create-group-modal').style.display='block'">创建群组</button>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="chat-area">
+        <div class="chat-header">
+            <div class="chat-title" id="chat-header">公共聊天室</div>
+            <div class="chat-actions">
+                <button title="刷新聊天记录" onclick="loadHistoryMessages()">↻</button>
+                <button title="清除聊天记录" onclick="document.getElementById('messages-container').innerHTML=''">×</button>
+            </div>
+        </div>
+
+        <div class="messages-container" id="messages-container"></div>
+
+        <div class="message-input-area">
+            <div class="message-input-tools">
+                <button title="发送图片">📷</button>
+                <button title="发送文件">📎</button>
+                <button title="表情">😊</button>
+            </div>
+
+            <div class="message-input">
+                <input type="text" id="message-input" placeholder="输入消息..." {% if not current_user.can_public_chat %}disabled{% endif %}>
+            </div>
+
+            <div class="message-send">
+                <button id="send-button" {% if not current_user.can_public_chat %}disabled{% endif %}>发送</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 创建群组模态框 -->
+<div id="create-group-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="document.getElementById('create-group-modal').style.display='none'">&times;</span>
+        <h2>创建群组</h2>
+        <form id="create-group-form">
+            <div class="form-group">
+                <label for="group-name">群组名称</label>
+                <input type="text" id="group-name" name="group_name" required>
+            </div>
+            <button type="submit">创建</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+<script>
+    // 全局变量
+    const current_user_can_public_chat = {{ 'true' if current_user.can_public_chat else 'false' }};
+    const current_user_can_private_chat = {{ 'true' if current_user.can_private_chat else 'false' }};
+
+    // 全局函数供HTML调用
+    function selectUserHandler(userId, userName) {
+        if (typeof selectUser === 'function') {
+            selectUser(userId, userName);
+        }
+    }
+
+    function selectPublicChatHandler() {
+        if (typeof selectPublicChat === 'function') {
+            selectPublicChat();
+        }
+    }
+
+    function selectGroupHandler(groupId, groupName) {
+        if (typeof selectGroup === 'function') {
+            selectGroup(groupId, groupName);
+        }
+    }
+
+    // 模态框功能
+    window.onclick = function(event) {
+        const modal = document.getElementById('create-group-modal');
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+{% endblock %}

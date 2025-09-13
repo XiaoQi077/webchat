@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}文件上传 - Web聊天室{% endblock %}
+
+{% block content %}
+<div class="login-container">
+    <h2>文件上传</h2>
+    <form method="POST" action="{{ url_for('upload_file') }}" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="file">选择文件</label>
+            <input type="file" id="file" name="file" required>
+        </div>
+        <button type="submit" class="btn btn-primary">上传</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}搜索 - Web聊天室{% endblock %}
+
+{% block content %}
+<div class="login-container">
+    <h2>搜索聊天记录</h2>
+    <form method="POST" action="{{ url_for('search') }}">
+        <div class="form-group">
+            <label for="keyword">关键词</label>
+            <input type="text" id="keyword" name="keyword" required>
+        </div>
+        <div class="form-group">
+            <label for="time_range">时间范围</label>
+            <select id="time_range" name="time_range">
+                <option value="all">全部时间</option>
+                <option value="today">今天</option>
+                <option value="week">本周</option>
+                <option value="month">本月</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">搜索</button>
+    </form>
+</div>
+{% endblock %}

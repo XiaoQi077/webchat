@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block title %}管理 - Web聊天室{% endblock %}
+
+{% block content %}
+<div class="admin-container">
+    <h2>管理控制台</h2>
+
+    <div class="admin-stats">
+        <div>总用户: {{ user_count }}</div>
+        <div>在线用户: {{ online_count }}</div>
+        <div>总消息: {{ message_count }}</div>
+        <div>总文件: {{ file_count }}</div>
+    </div>
+
+    <div class="admin-section">
+        <h3>待审核用户</h3>
+        {% if pending_users %}
+            <table class="user-table">
+                <thead>
+                    <tr>
+                        <th>用户名</th>
+                        <th>注册时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for user in pending_users %}
+                    <tr id="pending-user-{{ user.id }}">
+                        <td>{{ user.username }}</td>
+                        <td>{{ user.created_at }}</td>
+                        <td>
+                            <button class="btn approve-btn" data-user-id="{{ user.id }}">批准</button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p>没有待审核的用户</p>
+        {% endif %}
+    </div>
+
+    <div class="admin-section">
+        <h3>用户权限管理</h3>
+        <table class="user-table">
+            <thead>
+                <tr>
+                    <th>用户名</th>
+                    <th>管理员</th>
+                    <th>公共聊天</th>
+                    <th>私聊</th>
+                    <th>下载</th>
+                    <th>上传</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td>{{ user.username }}</td>
+                    <td>
+                        <label class="toggle-switch">
+                            <input type="checkbox" data-user-id="{{ user.id }}" data-field="is_admin"
+                                {% if user.is_admin %}checked{% endif %} {% if user.username == 'admin' %}disabled{% endif %}>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <label class="toggle-switch">
+                            <input type="checkbox" data-user-id="{{ user.id }}" data-field="can_public_chat"
+                                {% if user.can_public_chat %}checked{% endif %}>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <label class="toggle-switch">
+                            <input type="checkbox" data-user-id="{{ user.id }}" data-field="can_private_chat"
+                                {% if user.can_private_chat %}checked{% endif %}>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <label class="toggle-switch">
+                            <input type="checkbox" data-user-id="{{ user.id }}" data-field="can_download"
+                                {% if user.can_download %}checked{% endif %}>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <label class="toggle-switch">
+                            <input type="checkbox" data-user-id="{{ user.id }}" data-field="can_upload"
+                                {% if user.can_upload %}checked{% endif %}>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/admin.js') }}"></script>
+{% endblock %}
