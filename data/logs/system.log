@@ -1,0 +1,120 @@
+2025-09-13 15:23:28.711453 - UserID:1 - Username:admin - login - Target:None - Details:None
+2025-09-13 15:23:28.988237 - UserID:1 - Username:admin - connect - Target:None - Details:None
+2025-09-13 15:24:38.590936 - UserID:1 - Username:admin - disconnect - Target:None - Details:None
+2025-09-13 15:24:44.045508 - UserID:1 - Username:admin - update_user - Target:xiaoqi.approved - Details:true
+2025-09-13 15:24:54.290527 - UserID:2 - Username:xiaoqi - login - Target:None - Details:None
+2025-09-13 15:24:54.741533 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None
+2025-09-13 15:25:04.820012 - UserID:1 - Username:admin - connect - Target:None - Details:None
+2025-09-13 15:26:01.282986 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None
+2025-09-13 15:27:05.435169 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None
+2025-09-13 15:27:09.261605 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None
+2025-09-13 15:27:13.692334 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None
+2025-09-13 15:28:54.501831 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None
+2025-09-13 15:29:36.142434 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None
+2025-09-13 15:33:31.330023 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None
+2025-09-13 15:33:32.049993 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None
+2025-09-13 15:33:35.809980 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None
+2025-09-13 15:34:00.223732 - UserID:1 - Username:admin - disconnect - Target:None - Details:None
+2025-09-13 15:34:32.867949 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None
+2025-09-13 15:35:59.180998 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None
+2025-09-13 15:36:01.597979 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None
+2025-09-13 15:37:11.015669 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None
+2025-09-13 15:37:24.568128 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None
+2025-09-13 15:43:28.903033 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None
+2025-09-13 15:46:35.987497 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None
+2025-09-13 15:46:37.809224 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None
+2025-09-13 16:36:13.032689 - UserID:1 - Username:admin - disconnect - Target:None - Details:None
+2025-09-13 18:44:33.054926 - UserID:1 - Username:admin - connect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 18:44:47.326484 - UserID:1 - Username:admin - disconnect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 18:44:47.540441 - UserID:1 - Username:admin - connect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 18:45:00.400556 - UserID:1 - Username:admin - disconnect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 18:45:00.516928 - UserID:1 - Username:admin - connect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 18:45:01.873726 - UserID:1 - Username:admin - disconnect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 18:45:01.987270 - UserID:1 - Username:admin - connect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 18:45:29.227380 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 18:45:34.585885 - UserID:1 - Username:admin - disconnect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 18:45:34.689685 - UserID:1 - Username:admin - connect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 18:45:48.618593 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 18:45:48.919559 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 18:45:52.075381 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 18:45:52.434085 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 18:45:55.547133 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 18:45:55.938694 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 18:46:33.820830 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 18:46:34.050811 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 18:53:29.039570 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 18:53:29.327391 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 18:58:27.418112 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 18:58:53.735795 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 18:59:32.001022 - UserID:1 - Username:admin - disconnect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 18:59:32.108251 - UserID:1 - Username:admin - connect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 18:59:41.069437 - UserID:1 - Username:admin - create_group - Target:1 - Details:None - IP:192.168.3.7
+2025-09-13 18:59:42.736790 - UserID:1 - Username:admin - disconnect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 18:59:42.849899 - UserID:1 - Username:admin - connect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 18:59:54.930075 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 18:59:55.220095 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:00:49.459371 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:04:20.643862 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:04:24.124202 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:04:24.475373 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:04:51.504329 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:04:57.686371 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:05:13.866996 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:10:46.770594 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:10:55.014325 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:10:55.348657 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:11:20.167768 - UserID:1 - Username:admin - group_message - Target:group_1 - Details:1 - IP:192.168.3.7
+2025-09-13 19:11:23.048590 - UserID:1 - Username:admin - group_message - Target:group_1 - Details:1 - IP:192.168.3.7
+2025-09-13 19:11:23.937899 - UserID:1 - Username:admin - group_message - Target:group_1 - Details:1 - IP:192.168.3.7
+2025-09-13 19:12:02.533754 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:12:02.823614 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:12:08.739292 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:12:09.036845 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:12:17.574988 - UserID:1 - Username:admin - group_message - Target:group_1 - Details:q - IP:192.168.3.7
+2025-09-13 19:12:19.809729 - UserID:1 - Username:admin - group_message - Target:group_1 - Details:q - IP:192.168.3.7
+2025-09-13 19:12:22.122367 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:12:22.449044 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:12:32.633674 - UserID:1 - Username:admin - disconnect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 19:12:45.287460 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:12:54.361209 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:12:54.818223 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:12:58.976365 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:13:05.766569 - UserID:1 - Username:admin - connect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 19:13:42.803808 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:21:03.668224 - UserID:1 - Username:admin - connect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 19:21:05.562817 - UserID:1 - Username:admin - disconnect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 19:21:05.774526 - UserID:1 - Username:admin - connect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 19:21:16.545231 - UserID:1 - Username:admin - disconnect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 19:23:24.351653 - UserID:1 - Username:admin - update_profile - Target:nickname: 小七, avatar: default_avatar.png - Details:None - IP:192.168.3.7
+2025-09-13 19:23:29.676197 - UserID:1 - Username:admin - connect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 19:23:35.894243 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:23:37.114957 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:23:39.465157 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:23:55.223932 - UserID:1 - Username:admin - disconnect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 19:23:55.316581 - UserID:1 - Username:admin - connect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 19:24:13.311800 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:24:13.669060 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:24:16.378107 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:24:16.621317 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:24:19.168170 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:24:19.422539 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:24:20.080489 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:24:20.314295 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:27:28.445969 - UserID:1 - Username:admin - disconnect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 19:28:52.890109 - UserID:1 - Username:admin - update_user - Target:admin.can_public_chat - Details:false - IP:192.168.3.7
+2025-09-13 19:28:54.757413 - UserID:1 - Username:admin - update_user - Target:admin.can_public_chat - Details:true - IP:192.168.3.7
+2025-09-13 19:29:00.417741 - UserID:1 - Username:admin - update_user - Target:xiaoqi.can_public_chat - Details:false - IP:192.168.3.7
+2025-09-13 19:29:01.962336 - UserID:1 - Username:admin - update_user - Target:xiaoqi.can_public_chat - Details:true - IP:192.168.3.7
+2025-09-13 19:29:03.263858 - UserID:1 - Username:admin - update_user - Target:xiaoqi.can_download - Details:false - IP:192.168.3.7
+2025-09-13 19:29:06.298436 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:29:06.530912 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:29:10.749284 - UserID:1 - Username:admin - update_user - Target:xiaoqi.can_download - Details:true - IP:192.168.3.7
+2025-09-13 19:29:11.771304 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:29:12.113671 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:29:13.597900 - UserID:2 - Username:xiaoqi - disconnect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:31:47.468887 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
+2025-09-13 19:39:48.812291 - UserID:1 - Username:admin - connect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 19:47:04.034352 - UserID:1 - Username:admin - connect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 19:47:07.381431 - UserID:1 - Username:admin - disconnect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 19:47:07.615414 - UserID:1 - Username:admin - connect - Target:None - Details:None - IP:192.168.3.7
+2025-09-13 19:47:07.847304 - UserID:2 - Username:xiaoqi - connect - Target:None - Details:None - IP:192.168.3.64
